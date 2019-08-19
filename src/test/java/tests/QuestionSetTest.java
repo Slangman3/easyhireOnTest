@@ -20,14 +20,16 @@ public class QuestionSetTest {
     }
 
     @Test
-    public void questionSetOnCheck(){
+    public void questionSetOnCheck() throws InterruptedException {
         EasyhireMainPage easy = new EasyhireMainPage(driver);
         easy.openPage();
         easy.goToQuestionsPage();
+        easy.addNewQuestionSetByPlusBtn("New_set_1");
+
     }
 
-//    @AfterClass
-//    public void closeDriver() {
-//        driver.quit();
-//    }
+    @AfterClass
+    public void closeDriver() {
+        driver.quit();
+    }
 }
