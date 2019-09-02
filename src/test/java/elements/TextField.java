@@ -17,7 +17,7 @@ public class TextField {
         this.driver = driver;
         this.label = label;
         element = driver.findElement(By.xpath(String.format("//span[text()='%s']/../..//following-sibling::input", label)));
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 13);
     }
 
     public TextField typeText(String text) {

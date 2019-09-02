@@ -22,13 +22,9 @@ public class SeniorLoginTest {
     }
 
     @Test
-    public void startSeniorLoginPage() {
+    public void startLoginFillInputs() {
         SeniorLinkLoginPage start = new SeniorLinkLoginPage(driver);
         start.startLogin("aqa1@mailinator.com", "Password02");
-    }
-
-    @Test
-    public void createCarePlan() {
         CarePlanCreatePage page = new CarePlanCreatePage(driver);
         CarePlan carePlan = new CarePlan();
         carePlan.setHealthDirectiveOther("Health Directive");
@@ -36,6 +32,20 @@ public class SeniorLoginTest {
         carePlan.setToiletScheduleDescription("Toilet");
         carePlan.setBathShowerAssistProvidedByName("Bath Shower");
         carePlan.setPreparingMealsProblemManagingTips("Preparing Meals");
+        carePlan.setPerformedByOthersName("Perfermed By Others");
+        carePlan.setLightHouseworkProblemManagingTips("Set lighthouse Work");
+        carePlan.setCaregiverFamilyTransportsName("Category Family");
+        carePlan.setFinancesPerformedByOthersName("Finances Permormed");
+        carePlan.setShoppingProblemManagingTips("Shopping Problem");
+        carePlan.setEquipmentUsedOtherTips("Equipment Used");
+        carePlan.setPainLocationComment("Pain Location");
+        carePlan.setPainSourceComment("Pain Source");
+        carePlan.setPainTriggerdByComment("Pain Triggerd");
+        carePlan.setWoundCareBy("Wound Care");
+        carePlan.setOtherTreatmentsName("Other Treatments");
+        carePlan.setInjectionsBy("Injections By");
+        carePlan.setTherEquipmentName("Ther Equipment Name");
+        carePlan.setEquipmentCaredForBy("Equipment Cared");
         page.createPlan(carePlan);
     }
 
