@@ -11,7 +11,7 @@ import pages.SeniorLinkLoginPage;
 import java.util.concurrent.TimeUnit;
 
 public class SeniorLoginTest {
-    ChromeDriver driver;
+    private ChromeDriver driver;
 
     @BeforeClass
     public void openDriver() {
@@ -46,6 +46,38 @@ public class SeniorLoginTest {
         carePlan.setInjectionsBy("Injections By");
         carePlan.setTherEquipmentName("Ther Equipment Name");
         carePlan.setEquipmentCaredForBy("Equipment Cared");
+
+        carePlan.setCulturalConsiderations("Cultural Considerations");
+        carePlan.setCaregiverAndConsumerStrengths("Caregiver and Consumer Strengths");
+        carePlan.setImportantHealthMedicalConsiderations("Important Health Medical Considerations");
+        carePlan.setHealthDirectiveComments("Health Directive Comments");
+        carePlan.setBedPositioningComments("Bed Positioning Comments");
+        carePlan.setMovingTransferringComments("Moving Transferring Comments");
+        carePlan.setWalkingAmbulationComments("Walking Ambulation Comments");
+        carePlan.setGettingDressedComments("Getting Dressed Comments");
+        carePlan.setEatingDrinkingComments("Eating Drinking Comments");
+        carePlan.setToiletUseComments("Toilet Use Comments");
+        carePlan.setBathingShoweringComments("Bathing Showering Comments");
+        carePlan.setBrushingProblemManagementTips("Brushing Problem Management Tips");
+        carePlan.setBrushingComments("Brushing Comments");
+        carePlan.setPreparingMealsComments("Preparing Meals Comments");
+        carePlan.setLightHouseworkComments("Light Housework Comments");
+        carePlan.setTransportationComments("Transportation Comments");
+        carePlan.setFinancesComments("Finances Comments");
+        carePlan.setPhoneUseComments("Phone Use Comments");
+        carePlan.setShoppingComments("Shopping Comments");
+        carePlan.setEquipmentUsedTipsForManagingComment("Equipment Used Tips For Managing Comment");
+        carePlan.setMedicationPrepOrganizationComments("Medication Prep Organization Comments");
+        carePlan.setVisionComments("Vision Comments");
+        carePlan.setHearingComments("Hearing Comments");
+        carePlan.setCommunicationComments("Communication Comments");
+        carePlan.setPainComment("Pain Comment");
+        carePlan.setTreatmentNotesComments("Treatment Notes Comments");
+        carePlan.setEquipmentManagementNotesComments("Equipment Management Notes Comments");
+        carePlan.setSafetyNeedsNotesComments("Safety Needs Notes Comments");
+        carePlan.setuTAComments("uTA Comments");
+        carePlan.setDischargePlanNotesComments("Discharge Plan Notes Comments");
+
         page.createPlan(carePlan);
     }
 
